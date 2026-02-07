@@ -46,14 +46,14 @@ void loop() {
 void showStartScreen(){
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("WELCOME CUTIES!");
+  lcd.print("WELCOME, HI!");
   lcd.setCursor(0, 1);
   lcd.print("Press UP to start");
 }
 
 void checkStart(){
   int x = analogRead(0);
-  if(x < 200){   // UP pressed
+  if(x < 200){   
     gameStarted = true;
     lcd.clear();
   }
